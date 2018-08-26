@@ -13,7 +13,9 @@ def generator(limit):
 	pyperclip.copy(generated_password)
 	print("The generated password has been copied to your clipboard !!")
 
-print("						Welcome to password generator")
-print("Enter the required length of the generated password (max 20 chracters!)")
-limit = int(input())
-generator(limit)
+if __name__ == "__main__":
+	
+	print("						Welcome to password generator")
+	print("Enter the required length of the generated password (max 20 chracters!)")
+	limit = int(input())
+	generator(limit)
